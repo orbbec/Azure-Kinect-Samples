@@ -8,11 +8,6 @@ set PACKAGE_SYSTEM_MEMORY=packages\System.Memory.4.5.3
 set PACKAGE_SYSTEM_RUNTIME_SERVICES=packages\System.Runtime.CompilerServices.Unsafe.4.5.2
 set PACKAGE_SYSTEM_REFLECTION=packages\System.Reflection.Emit.Lightweight.4.6.0
 
-copy Libs\depthengine_2_0.dll Assets\Plugins
-copy Libs\k4a.dll Assets\Plugins
-copy Libs\k4arecord.dll Assets\Plugins
-copy Libs\OrbbecSDK.dll Assets\Plugins
-
 copy %PACKAGE_SENSOR_SDK%\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.dll Assets\Plugins
 copy %PACKAGE_SENSOR_SDK%\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.pdb Assets\Plugins
 copy %PACKAGE_SENSOR_SDK%\lib\netstandard2.0\Microsoft.Azure.Kinect.Sensor.deps.json Assets\Plugins
@@ -35,6 +30,11 @@ copy %PACKAGE_ONNXRUNTIME%\lib\native\amd64\release\onnxruntime.dll Assets\Plugi
 copy %PACKAGE_ONNXRUNTIME%\lib\native\amd64\release\onnxruntime_providers_cuda.dll Assets\Plugins
 copy %PACKAGE_ONNXRUNTIME%\lib\native\amd64\release\onnxruntime_providers_shared.dll Assets\Plugins
 copy %PACKAGE_ONNXRUNTIME%\lib\native\amd64\release\onnxruntime_providers_tensorrt.dll Assets\Plugins
+
+copy Libs\depthengine_2_0.dll Assets\Plugins
+copy Libs\k4a.dll Assets\Plugins
+copy Libs\k4arecord.dll Assets\Plugins
+copy Libs\OrbbecSDK.dll Assets\Plugins
 
 copy %PACKAGE_BTSDK%\content\dnn_model_2_0_op11.onnx .\
 copy %PACKAGE_ONNXRUNTIME%\lib\native\amd64\release\directml.dll .\
