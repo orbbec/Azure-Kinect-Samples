@@ -1,5 +1,9 @@
 # Sample Unity Body Tracking Application
 
+## Update
+
+This sample project now support Orbbec Femto Bolt & Femto Mega, we put the libraries support these device in the Libs folder and modified MoveLibraryFiles.bat script, you will do nothing but follow steps below to run this bat script.
+
 ### Directions for getting started:
 
 #### 1) First get the latest nuget packages of libraries:
