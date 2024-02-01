@@ -11,6 +11,10 @@ Each sample includes a README file that explains how to run and use the sample.
 [![Build Status](https://microsoft.visualstudio.com/Analog/_apis/build/status/Analog/AI/depthcamera/microsoft.Azure-Kinect-Samples?branchName=master)]
 (https://microsoft.visualstudio.com/Analog/_build/latest?definitionId=41402&branchName=master)
 
+## How to quickly use Femto Bolt and Femto Mega to run body tracking?
+
+Download the [body tracking programs that are compatible with Bolt and Mega](https://objects.githubusercontent.com/github-production-release-asset-2e65be/727692278/5245dfc9-73eb-4def-80f1-d2268a99828e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240201%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240201T055135Z&X-Amz-Expires=300&X-Amz-Signature=7c1fe32db61684d2a3976cfa4964661193e7e4ac91554ee90b8c7d755394b998&X-Amz-SignedHeaders=host&actor_id=68427285&key_id=0&repo_id=727692278&response-content-disposition=attachment%3B%20filename%3Dbody-tracking-bolt-and-mega-bin.zip&response-content-type=application%2Foctet-stream), and use Femto Bolt and Femto Mega to run them.
+
 ## Contribute
 
 We welcome your contributions and suggestions! Please open new issues in our [Azure Kinect Sensor SDK repository]
