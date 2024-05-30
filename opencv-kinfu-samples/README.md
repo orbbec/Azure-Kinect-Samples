@@ -8,17 +8,17 @@ The sample requires user having OpenCV/OpenCV_Contrib/VTK installed.
 
 ## For Windows
 
-The following steps are tested on Windows with OpenCV 4.1.0 (user should configure the right path of OpenCV dependencies):
-- Download and install opencv-4.1.0 from https://opencv.org/releases/ (e.g. on windows, download the opencv-4.1.0-vc14_vc15.exe, and extract contents), then, copy opencv\build\include\* to the opencv-kinfu-samples\extern\opencv-4.1.0\include\* (please create extern directory and subdirectories accordingly).
-- Download opencv_contrib-4.1.0 source from https://github.com/opencv/opencv_contrib/releases and extract contents, then copy opencv_contrib-4.1.0\modules\rgbd\include\* to extern\opencv_contrib-4.1.0\modules\rgbd\include\*, and copy opencv_contrib-4.1.0\modules\viz\include\* to extern\opencv_contrib-4.1\modules\viz\include\*.
-- Download VTK-8.2.0 from https://vtk.org/download/ and build the source accordingly.
+The following steps are tested on Windows with OpenCV 4.5.3 (user should configure the right path of OpenCV dependencies):
+- Download and install opencv-4.5.3 from https://opencv.org/releases/ (e.g. on windows, download the opencv-4.5.3-vc14_vc15.exe, and extract contents), then, copy opencv\build\include\* to the opencv-kinfu-samples\extern\opencv-4.5.3\include\* (please create extern directory and subdirectories accordingly).
+- Download opencv_contrib-4.5.3 source from https://github.com/opencv/opencv_contrib/releases and extract contents, then copy opencv_contrib-4.5.3\modules\rgbd\include\* to extern\opencv_contrib-4.5.3\modules\rgbd\include\*, and copy opencv_contrib-4.5.3\modules\viz\include\* to extern\opencv_contrib-4.1\modules\viz\include\*.
+- Download VTK-9.3.0 from https://vtk.org/download/ and build the source accordingly.
 - Follow the instruction from opencv_contrib (https://github.com/opencv/opencv_contrib) to build opencv with extra modules (we used cmake-gui to generate opencv sln file and built opencv and opencv_contrib modules with Visual Studio 2017, user needs to configure the WITH_VTK, VTK_DIR and OPENCV_ENABLE_NONFREE in the cmake-gui before generating sln).
 - We pre-configured kinfu_example.vcxproj with opencv/opencv_contrib include/lib dependencies paths, the following is a list of dependencies we need for this sample:
     ```
     Includes:
-        extern\opencv-4.1.0\include
-        extern\opencv_contrib-4.1.0\modules\rgbd\include
-        extern\opencv_contrib-4.1.0\modules\viz\include
+        extern\opencv-4.5.3\include
+        extern\opencv_contrib-4.5.3\modules\rgbd\include
+        extern\opencv_contrib-4.5.3\modules\viz\include
     Libs:
         extern\lib\Debug\opencv_calib3d410d.lib
         extern\lib\Debug\opencv_core410d.lib
@@ -60,11 +60,11 @@ Example:
 
 ### Setting up
 
-The following steps are tested on Ubuntu Linux (18.04) with OpenCV 4.1.0
+The following steps are tested on Ubuntu Linux (18.04) with OpenCV 4.5.3
 
-- Download VTK-8.2.0 from https://vtk.org/download/ and build the source accordingly.
+- Download VTK-9.3.0 from https://vtk.org/download/ and build the source accordingly.
 - Clone opencv and opencv_contrib (from https://github.com/opencv/opencv and https://github.com/opencv/opencv_contrib respectively)
-- Checkout both repositories to 4.1.0 (If you are downloading the zip from releases, make sure you download the same version of the two repositories)
+- Checkout both repositories to 4.5.3 (If you are downloading the zip from releases, make sure you download the same version of the two repositories)
 - Set `OPENCV_EXTRA_MODULES_PATH` to `your-path/opencv_contrib/modules/`, enable `WITH_VTK`, and set `VTK_DIR` to your VTK's cmake directory (which includes the `VTKConfig.cmake` file), enable `OPENCV_ENABLE_NONFREE` (we used cmake-gui to set these and generate opencv makefile, where you can also make sure if `BUILD_opencv_viz` and `BUILD_opencv_rgbd` are checked)
 - Once the makefile is generated using cmake-gui, go to the generated folder and perform:
     ```

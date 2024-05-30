@@ -75,6 +75,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>%(AdditionalDependencies);</AdditionalDependencies>
       <AdditionalLibraryDirectories>extern\lib\Release;</AdditionalLibraryDirectories>
+	  <AdditionalDependencies>opencv_world453.lib;</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
