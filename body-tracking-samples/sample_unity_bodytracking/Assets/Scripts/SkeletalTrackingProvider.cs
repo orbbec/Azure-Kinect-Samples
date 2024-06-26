@@ -50,6 +50,7 @@ public class SkeletalTrackingProvider : BackgroundDataProvider
                     {
                         using (Capture sensorCapture = device.GetCapture())
                         {
+                            Debug.Log("................Capture");
                             // Queue latest frame from the sensor.
                             tracker.EnqueueCapture(sensorCapture);
                         }
