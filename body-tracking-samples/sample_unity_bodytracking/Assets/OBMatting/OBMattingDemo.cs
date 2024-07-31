@@ -70,6 +70,8 @@ public class OBMattingDemo : MonoBehaviour
                 session.Process(colorImg, depthImg, 1000, out ObmWrapper.Frame frame);
 
                 var maskImg = frame.GetMask();
+                var outColorImg = frame.GetColor();
+                var outDepthImg = frame.GetDepth();
                 if(maskTexture == null)
                 {
                     maskTexture = new Texture2D(maskImg.GetWidth(), maskImg.GetHeight(), TextureFormat.Alpha8, false);
@@ -82,6 +84,9 @@ public class OBMattingDemo : MonoBehaviour
 
                 colorImg.Dispose();
                 depthImg.Dispose();
+                maskImg.Dispose();
+                outColorImg.Dispose();
+                outDepthImg.Dispose();
 
             }
             if(color != null)
