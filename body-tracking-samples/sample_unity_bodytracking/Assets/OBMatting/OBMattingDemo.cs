@@ -106,5 +106,7 @@ public class OBMattingDemo : MonoBehaviour
         session.Dispose();
 
         ObmWrapper.Context.Terminate();
+
+        device.Dispose();
     }
 }
